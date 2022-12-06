@@ -1,0 +1,61 @@
+h2{
+    color: blue;
+    background-color: yellow;
+    /* Color values = blue, pink
+        Hex values = #  0 to 9 or , a to e )
+        rgb values = ( r = red, g = green, b = blue, range is 255)
+         */
+    background-color:#da2345 ; /* Hex values*/
+    background-color: rgb(255, 34,45); /* rgb values*/
+
+    /* important note */
+    /* opacity: ;(ka matlab transprant hota ha Range is (0.0 to 1.0 ) hota ha) */
+    opacity: 0.1;
+}
+
+p{
+    /* background-color: pink; */
+}
+
+/* -----------------------------Background-Images------------------------ */
+.container{
+    /* background-color: #453ebc; */
+    width: 50%;
+    height: 50vh;
+    /* background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg); */
+
+    /* Background repeat */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+    background-repeat: no-repeat;
+    /* background-position */
+    /* background-position: top; */
+    /* background-position: left ; */
+    /* background-position: left bottom; */
+    /* background-position: right bottom; */
+
+
+    /* background-attachment */
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+
+
+    /* background-size */
+    /* background-size: contain; */
+    /* background-size: cover; */
+
+    /* Short-Hand- propaties */
+    /* First = color  */
+    /* Second = image  */
+    /* Third = no-repeat */
+    /* fourth = position  */
+    background: red url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=412&q=80) no-repeat top;
+
+
+}

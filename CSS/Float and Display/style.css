@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(194, 194, 232);
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    border: 2px solid #cccc;
+    background: rgb(245, 242, 242);
+    margin: 30px auto;
+    padding: 10px;
+}
+.container h1{
+    background: rgb(143, 237, 251);
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.container img{
+    width: 200px;
+    height: 200px;
+    margin: 20px 15px 10px 0px;
+    background-color: gray;
+    padding: 10px;
+    float: left;
+}
+.container .text{
+    color: rgb(74, 72, 72);
+    margin: 20px 10px;
+    text-align: justify;
+
+}
+.clear{
+    float: left;
+}

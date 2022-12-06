@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JavaScript.</title>
+</head>
+<body>
+    <h1 id="demo">Array</h1>
+    <h1 id="add">Array</h1>
+    <script>
+        // This is Syntex 
+        const student = ["Rohit","Mohit","Abshike","Komal"];
+        console.log(student);
+
+        // Second Method How to Write 
+        let employees = new Array();
+        employees[0] = "Raja";
+        employees[1] = "Mukesh";
+        employees[2] = "Ravi";
+        console.log(employees);
+
+        // Third Method Constructor
+        let subject = new Array("Math","English","Computer Science", "C++");
+        console.log(subject);
+
+        // Pratice in Array 
+        let cars = ["Maruti Sujaki","Safari","Fortuner","Jeep"];
+        let add = cars.join("-");
+        document.getElementById('demo').innerHTML=cars;
+        document.getElementById('add').innerHTML=add;
+
+        // Propaties of Array in javaScript
+        console.log(student.length);
+        // How to Add new array in last array
+        console.log(student.push("Vikesh"));
+        console.log(student);
+        // How to Delete last Array in the array Use of pop()
+        console.log(student.pop());
+        console.log(student.length);
+        // How to Delete first Array in the Array Use of Shift()
+        console.log(student.shift());
+        console.log(student.length);
+
+        // How to add array in the first Use of Unshift()
+        console.log(student.unshift("Rishu raj"));
+        console.log("Use of Unshift. Unshift ka matlab First ma New Array add kar dana",student);
+        // How add two Array Use of Concat(). (Concat humsa NewArray data ha)
+        console.log(student);
+        console.log(employees);
+        // console.log(student.concat(employees));
+        // -------------------
+        console.log(student);
+        console.log(employees);
+        let newArray = student.concat(employees);
+        console.log("This is New Array ",newArray);
+
+        // Use of sort(). (sort ka use According order ma convert karta ha just like a,b,c,d,e,f.....) or sort updat vhe karta ha
+       newArray.sort();
+        console.log("According order ",newArray);
+
+        // Use of Array.isArray(). (Iska use sirf test karna ma kya jyta ha )
+        // true 
+        console.log(Array.isArray(newArray));
+        // false 
+        let f= "rohit";
+        console.log(Array.isArray(f));
+
+        // Use of Indexof(). (iska matlab array ma value jo ha usko index number data ha )
+        // Note : = Agar answer -1 ma yata ha to array ma wo value nahi ha 
+        console.log(newArray);
+        console.log(newArray.indexOf("Raja"));
+        console.log(newArray.indexOf("Kundan"));
+
+        //Array ma sirf for loop or Array.for Each loop
+        //  Use of for loop in Array 
+        let staff = ["Raja","Raju","Kundan","Mukesh","Rani","Muskan","Salni","Aditya","Sonu","Kumari"];
+        for(let i = 0; i < staff.length; i++){
+            console.log(staff[i]);
+            // document.write(staff[i],"<br>");
+        }
+
+        // Use of for Each loop 
+        let city = ["Mumbai","Rajastan","Ludak","Sri Lanka","Kolkata","Hadrabad"];
+        for(let newSecondVarival of city){
+            // console.log(newSecondVarival);
+            document.write("Is ma i ka juja par newSecondVarival ya varival banaya ha ", newSecondVarival,"<br>");
+        }
+
+    </script>
+</body>
+</html>

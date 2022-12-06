@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice_page</title>
+</head>
+<body>
+    <script>
+        function arry(arr){
+            let obj = {};
+            arr.forEach((v) =>{
+                let key = v[0];
+                let value = v[1];
+                obj[key] = value;
+            });
+            return obj;
+        }
+        console.log(
+            arry([
+                ["Ram","Burger"],
+                ["Shyam","Spring Rolls"],
+                ["Rahul","Pizza"],
+                ["Neha","Ice Cream"],
+            ])
+        );
+    </script>
+
+    <script>
+        var student = {
+            Name : "Rahul verma",
+            Class : "10Th",
+            RollNo : 31,
+            Subject : "English",
+            Marks : 34
+        };
+        console.log(student);
+        alert(JSON.stringify(student,null, 4));
+        delete student.Class;
+        delete student.RollNo;
+        console.log(student);
+        alert(JSON.stringify(student,null,4));
+
+    </script>
+
+    <script>
+        function invert_key_value(obj){
+            var result = {};
+            var keys = _key(obj);
+            // for(var i = 0; length = key.length; i < length i++){
+
+            // }
+            return result;
+        }
+        function _key(obj){
+            if(!isObject.keys)return[];
+            if (Object.keys) return Object.keys(obj);
+            var keys = [];
+            for (var key in obj) if(_.has(obj,key)) keys.push(key);
+            return keys;
+        }
+        function _key(obj){
+            var type = typeof obj;
+            return type === 'function' || type === 'object' && !!obj;
+        }
+        let obj = {Name : "Virat", Sport : "Cricket", Age : "33"};
+        console.log(obj);
+        alert(JSON.stringify(obj,null,4));
+        let newobj= invet_key_value(obj);
+        alert(JSON.stringify(newobj,null,4));
+        console.log(newobj);
+    </script>
+</body>
+</html>

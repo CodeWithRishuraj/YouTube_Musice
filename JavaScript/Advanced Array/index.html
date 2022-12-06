@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Array</title>
+</head>
+<body>
+    <script>
+        let students = [
+            ["Rohit Raj","V",53,80,90,"Pass"],
+            ["Mukesh Kumar","Vi",56,85,70,"Pass"],
+            ["Rani Kumari","VII",80,90,60,"Pass"],
+            ["Amit Kumar","IV",12,78,90,63,"Pass"]
+        ];
+
+        for(let i = 0; i< students.length; i++){
+            let student = students[i];
+            for(let j = 0; j < students.length; j++){
+                // console.log(student[j]);
+                document.write(students[j],"<br>");
+            }
+            // console.log("***********************");
+            document.write("**********************");
+        }
+    </script>
+</body>
+</html>

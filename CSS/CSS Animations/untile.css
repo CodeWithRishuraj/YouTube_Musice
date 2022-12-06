@@ -1,0 +1,21 @@
+:root{
+    --bg-color:rgb(88, 2, 2);
+    --text-color:rgb(12, 239, 12);
+    --border-color:black;
+    --border-radius:10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 h2 h3 h4 h5 h6 span p {
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+}
+body{
+    scroll-behavior: smooth;
+    background: var(--bg-color);
+}

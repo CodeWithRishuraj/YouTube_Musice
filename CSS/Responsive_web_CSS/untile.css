@@ -1,0 +1,19 @@
+:root{
+    --bg-color:rgb(7, 7, 103);
+    --color:rgb(250, 249, 249);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 h3 h2 h5 h4 h6 p span {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--bg-color);
+    color: var(--color);
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}

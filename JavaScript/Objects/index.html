@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JavaScript.</title>
+</head>
+<body>
+    <!-- JavaScript Object are a collection of key - value pairs.
+    An Object is a reference data types
+    Objects are the Bulding blocks of JavaScript.
+    key name and value are separated by Colon(:)
+    syntex:
+    <script>
+        const a = {firstName:"johan", lastName:"Kumar", age:"50", eyecolor:"red"};
+        firstName, lastName, age, eyecolor are keys.
+        johan,kumar 50 red are values.
+    </script> -->
+    <div>
+        <h1 id="showName"></h1>
+    </div>
+    <script>
+        // const student = {
+        //     name:"Rohit Raj",
+        //     Age:"11",
+        //     Class:"Five",
+        //     Rollno:"iii",
+        //     schooleName:"Sri Sai School",
+        //     totalMarks:"100"
+        // };
+        // console.log(student.name);
+        // function updateVariable(x){
+        //     x.totalMarks = 10;
+        // }
+        // console.log("Original Value : " + student.totalMarks);
+        // updateVariable(student);
+        // console.log("Update Value : " + student.totalMarks);
+
+        // document.getElementById('showName').innerHTML=student.name;
+    </script>
+    <script>
+        // display Function
+
+        const student = {
+            name:"Rohit Raj",
+            Age:"11",
+            Class:"Five",
+            Rollno:"iii",
+            schoolName:"Sri Sai School",
+            totalMarks:100,
+            display: function(){
+                console.log("Student name " + this.name + " of class " + this.Class + " has School Name " + this.schoolName + "Its roll no " + this.Rollno + "Its marks "+ this.totalMarks);
+            }
+        };
+     
+        student.display();
+        
+    </script>
+
+    <!-- Agar key ma Number values raha ga to  -->
+    <script>
+        const price = {
+            100 : 'Patato',
+            150 : 'Tomato',
+            20 : 'Chili',
+            50 : 'Onion',
+            bestPrice: 'Mango',
+            display: function(){
+                console.log(price[20] + price['bestPrice']);
+            }
+        }
+        price.display();
+        // How to Show in Number 
+        console.log(price['bestPrice']);
+        console.log(price[100]);
+    </script>
+
+
+<!-- Some propaties in Operator -->
+<!-- <script>
+    // hasOwnProperty ka matlab name ka koi key ha ya nahi
+    console.log(student.hasOwnProperty('name'));
+</script> -->
+
+
+<!-- <script>
+    Constructor
+    // How to Write a Object with use of function
+    function StudentStructure(name, Class, Status, TotalMarks){
+        this.name = name;
+        this.Class = Class;
+        this.Status =Status;
+        this.TotalMarks = TotalMarks;
+    }
+    let a = new StudentStructure('Aman','Iv','Pass',90);
+    console.log(a); 
+
+    // How to write this function in 
+    function StudentStructure(name, Class, Status, TotalMarks){
+        this.name = name;
+        this.Class = Class;
+        this.Status =Status;
+        this.TotalMarks = TotalMarks;
+        this[20] = 100;
+        this.display = function(){
+            console.log(this.name);
+        }
+
+    }
+    let v = new StudentStructure('Aman','Iv','Pass',90);
+    console.log(v); 
+</script> -->
+
+<script>
+    // .size (ka matlab kitna key ha)
+    // .delete() kisi ko delete karna ka laya
+    // .set() add karna ka laya
+    // .get() ka matlab key ko search karna
+    //  Use of new map and this.set();
+    let student1 = new Map();
+    student1.set('name','Nitish');
+    student1.set('class','IV');
+    student1.set('status','fail');
+
+    // forEach loop
+    student1.forEach(function(key,value){
+        console.log(key+ "" + value);
+    });
+
+</script>
+</body>
+</html>

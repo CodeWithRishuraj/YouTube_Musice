@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While_Loop and Do while loop.</title>
+</head>
+<body>
+    <script>
+        // This is first examples
+        // let x =0;
+        // while(x<=10){
+        //     document.write(x,"<br>");
+        //     x++;
+        // }
+
+        // This is second examples
+        // var sum = 0;
+        // var input = 0;
+        // while(input != 'x'){
+        //     sum+= parseInt(input);
+        //     input = prompt('Enter number to add or x to exit');
+
+        // }
+        // document.write('Total is ' + sum);
+    </script>
+
+    <script>
+        // Do While loop in javascript.
+        var input = 0;
+        var sum = 0;
+        do{
+            sum += parseInt(input);
+            input = prompt("Enter number to add or x to exit");
+            
+        }while(input != 'x');
+        document.write(sum);
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varabile in Javascript.</title>
+</head>
+<body>
+    <div class="contaienr">
+        <span id="second">
+
+        </span>
+        <span id="third">
+
+        </span>
+    </div>
+    <script>
+        // There are three types of varabile in javaScript
+        // (1) var => its is define any where and 
+        // var a= 20;
+        // var b= 30;
+         // agar a ko phir sa difine kara ga to value change ho jya ga 
+        // var a=10;
+        // document.write("Normal values : ",a,b,"<br>");
+        // document.write("Add values : ",a+b,"<br>");
+        // document.write('Ram age is :', a,"<br>");
+        // document.write('Gita age is : ', b);
+
+        // let a =12;
+        // let b =10;
+        // // let ko yak he varable ka sat difine nahi kar sakta ha 
+        // let c=10;
+        // document.write("Normal values : ",a,b,"<br>");
+        // document.write("Additional values : ",a+b,"<br>");
+        // document.write('Ram age is : ',a,"<br>");
+        // document.write('Gita age is :',b,"<br>");
+
+        // const a =10;
+        // const b =10;
+        // // const ka matlab dubara yak he value ka sat difine vhe nahi kar sakta 
+        // document.write('Normal values : ',a,"<br>");
+        // document.write('Additional values is :',b,"<br>");
+        // document.write('Ram age is : ',a,"<br>");
+        // document.write('Gita age is :',b);
+
+        var fruit = "Mango";
+        var price = 100;
+        // document.write(price);
+        document.getElementById('second').innerHTML=fruit;
+        document.getElementById("third").innerHTML=price;
+
+        // Second Method 
+        // is method ma (` `) arrow ka use hota ha 
+        
+        console.log(`My fav fruit is ${fruit} and its coast is Rs. ${price}`);
+    </script>
+</body>
+</html>

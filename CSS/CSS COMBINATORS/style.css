@@ -1,0 +1,23 @@
+
+
+/* COMBINATORS  */
+/* THIS IS COMBINATORS. (space, >, +, ~) */
+
+
+/* .container p{
+    color: yellow;   (This is Space Selector)
+} */
+
+/* .container > p{
+    color: red;
+} */
+
+/* (+, ~) ==> Sibling - elements in the same order */
+
+/* li + li{
+    color:green; (+) iska matlab sirf yak pa
+} */
+
+/* ul ~ p{
+    color: blue;  (~) iska matlba sab pa apply karna ha
+} */

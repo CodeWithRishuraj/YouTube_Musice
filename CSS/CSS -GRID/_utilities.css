@@ -1,0 +1,19 @@
+:root{
+    --backgroundColor:black;
+    --textColor:white;
+    --fontFamily:cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--backgroundColor);
+    color: var(--textColor);
+    font-family: var(--fontFamily);
+}
+
+.grid-item{
+    padding: 20px 15px;
+    background: rgb(99, 3, 75);
+    border: 1px solid var(--textColor);
+}

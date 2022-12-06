@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: red;
+    margin: 10px 10px 0px 10px;
+    /* THIS IS DISPLAY FLEX */
+
+    /* display:flex;(ka matlab ya row or column ma hota ha ) */
+    display: flex;
+    /* propaties */
+    /* flex-direction: column; */
+    /* flex-direction: row ; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+
+    /* THIS IS FLEX WRAP  */
+
+    /* flex-wrap: nowrap; Defoult propaties */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* FLEX-FLOW  */
+    /* flex-flow: row-reverse; */
+
+    /* JUSTIFY -CONTENT  */
+    /* justify-content: space-evenly; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+
+    /* ALIGN - ITEMS  */
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    
+
+    /* AIGN - CONTENT  */
+    /* align-content: flex-end; */
+
+
+    /* ROW GAP COLUMN  GAP */
+    row-gap: ;
+
+
+
+    
+}
+p{
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: gray;
+    border: 3px solid black;
+    color: white;
+    /* margin: 10px; */
+    text-align: justify;
+    
+
+}

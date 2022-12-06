@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    background-color: rgb(184, 164, 245);
+}
+h1{
+    margin-top: 50px;
+}
+
+/* Positioning of HTML Elements
+
+    position: static;
+    position: absolute;
+    position: relative;
+    position: fixed;
+    position: sticky;     
+    
+    
+    z-index
+    
+    
+    */
+
+     /* THIS IS RELATIVE VALUE IS USE  */
+
+.item{
+    width: 300px;
+    height: 300px;
+    background: rgb(234, 6, 6);
+    margin: 50px 0px 0px 50px;
+}
+.item > div{
+    width: 300px;
+    height: 300px;
+    background: rgb(16, 248, 4);
+    margin: 50px 0px 0px 0px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    
+}
+
+/* THIS IS ABSULATE VALUE IS USE  */
+
+
+/* position (absolute) ko use karna ka do rule ha 
+
+(1)  main div ma position relative daya ha to child sa kam kara ga 
+
+(2) main div ma position relative nahi daya ha to wo body sa kam kara ga */
+
+.item2{
+    width: 600px;
+    height: 200px;
+    background: #000;
+    margin: 30px 0px 0px 50px;
+    position: relative;
+}
+.item2 > div{
+    width: 600px;
+    height: 200px;
+    background: rgb(36, 2, 78);
+    /* margin: 50px 0px 0px 50px; */
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* This is fixed value is use  */
+
+.item3{
+    width: 600px;
+    height: 600px;
+    background: rgb(3, 62, 72);
+    /* margin: 30px 50px; */
+    position: fixed;
+    
+}
+.item4{
+    width: 600px;
+    height: 200px;
+    background: rgb(246, 7, 194);
+    margin: 30px 50px;
+    position: sticky;
+    top: 10px;
+z-index: 1000;
+    /* position: relative;  */
+}
+
+

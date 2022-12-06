@@ -1,0 +1,57 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    box-shadow: 2px 2px 10px red;
+}
+nav > .left-icon-container > h1{
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+nav > .right-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav > .right-icon-container > a{
+    margin-right: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+    transition: 0.7s; /* This is important*/
+    font-weight: 600;
+}
+nav > .right-icon-container > a:hover{
+    color: white;
+    opacity: 0.8;
+}
+/* (a:last-child) ka matlab  a k under jo last ma us sa margin laga  */
+nav > .right-icon-container > a:last-child{
+    margin-right: 50px;
+}
+
+.card-container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card > img{
+    max-width: 450px;
+    text-align: center;
+    margin: 10px 25px;
+    border-radius: 20px;
+}
+
+
+/* NOW START MEDIA QUERY  */
+
+@media screen and (max-width:768px) {
+    .card-container{
+        display: block;
+        text-align: center;
+    }
+}

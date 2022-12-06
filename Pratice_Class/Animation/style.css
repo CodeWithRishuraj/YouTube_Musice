@@ -1,0 +1,134 @@
+.contianer{
+    width: 80%;
+    height: 80vh;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: auto;
+    position: relative;
+    top: 50px;
+    background: blue;
+    box-shadow: 5px 5px  50px rgb(11, 11, 11);
+}
+/* .contianer:hover{
+    animation-play-state: paused;
+} */
+.contianer > .childern{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top: 20px;
+    border: var(--border);
+    border-radius:100%;
+    background: rgb(233, 249, 5);
+    display: flex;
+    justify-content: space-evenly;
+    animation: name 2s alternate infinite;
+}
+.childern > .child{
+    width: 10px;
+    height: 10px;
+    border: var(--border);
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    background: black;
+}
+.childern > .mouth{
+    width: 70%;
+    height: 0px;
+    border: var(--border);
+    position: absolute;
+    top: 60px;
+    border-radius: 100%;
+    background-color: rgb(255, 60, 0);
+}
+.contianer > .cloud-store{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+}
+.cloud-store > .cloud1{
+    width: 250px;
+    height: 50px;
+    position:absolute;
+    top: 110px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: cloud1 2s alternate infinite;
+    background: white;
+}
+.cloud-store > .cloud2{
+    width: 250px;
+    height: 50px;
+    position:relative;
+    top: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: cloud2 2s alternate infinite;
+    background: white;
+}
+.cloud-store > .cloud3{
+    width: 250px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: cloud3 2s alternate infinite;
+    background: white;
+}
+.contianer > .rode{
+    width: 100%;
+    height: 32vh;
+    margin-left: -1px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background: black;
+    position: relative;
+    top: 52%;
+    display: flex;
+    justify-content: space-around;
+}
+.rode > .white-line{
+    width: 150px;
+    height: 20px;
+    border: var(--border);
+    border-radius: 5%;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    background: rgb(250, 248, 248);
+}
+@keyframes cloud1 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
+@keyframes cloud2 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
+@keyframes cloud3 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes name {
+    0%{
+        transform: translateX(0%);
+    }
+   100%{
+        transform:translateX(1100%);
+    }
+}

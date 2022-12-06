@@ -1,0 +1,22 @@
+:root{
+    --bg-color:rgb(13, 152, 170);
+    --color:rgb(253, 249, 249);
+    --border: 2px solid rgb(206, 4, 4);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1 h2 h3 h4 h5 h6 p span{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: var(--bg-color);
+    /* color: var(--color); */
+    font-family: sans-serif;
+}

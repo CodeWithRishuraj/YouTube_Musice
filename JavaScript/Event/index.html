@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events.</title>
+</head>
+<body onresize="document.body.style.backgroundColor='red'">
+    <h2>This is click event.</h2>
+    <button onclick="document.getElementById('time').innerHTML=Date()">Show Time</button>
+    <div id="time"></div>
+
+    <h2>THis is mouseover and mouseout event.</h2>
+    <div 
+        onmouseover="document.body.style.backgroundColor='pink'"
+        onmouseout="document.body.style.backgroundColor='white'">Mouseover to change body backgroundcolor.
+    </div>
+
+    <h2>This is mousedown event.</h2>
+    <div id="changecolor"></div>
+
+    <script>
+        document.getElementById('changecolor').innerHTML="mouse click down the text color will change";
+        document.getElementById('changecolor').onmousedown=function(){
+            alert ('Mouse down is Occured');
+        }
+    </script>
+
+    <h2 id="hed">THis is mousemove event</h2>
+    <div id="move">This is a Ass and mousemove any time he count</div>
+    <script>
+        document.getElementById('move').innerHTML='';
+        var i = 0;
+        document.getElementById('hed').onmouseover= function(){
+            i++;
+            document.getElementById('hed').innerHTML=1;
+        }
+        document.getElementById('hed').onmouseup= function(){
+            i++;
+            document.getElementById('hed').innerHTML=1;
+        }
+    </script>
+
+    <h2>Key up and key down event.</h2>
+    <input type="text" id="keyEvent">
+    <div id="show"></div>
+    <script>
+        document.getElementById('keyEvent').onkeydown= function(){
+            document.getElementById('show').innerHTML="Key is Down";
+        }
+        document.getElementById('keyEvent').onkeyup=function(){
+            document.getElementById('show').innerHTML="key is up";
+        }
+        document.getElementById('keyEvent').onkeypress=function(){
+            document.getElementById('show').style.backgroundColor="yellow";
+        }
+    </script>
+
+    <h2>Load and Unload event in javaScript.</h2>
+    <script>
+        document.body.onload = function(){
+            alert ('Document is loaded');
+        }
+        document.body.onunload =function(){
+            alert ('Doucment is unloaded')
+        }
+    </script>
+
+<h2>onfocus and resize event in javaScript.</h2>
+<!-- onfocus ka matlab hage kar data ha -->
+<!-- <input type="text" onfocus="alert('i got in focus')" -->
+
+<!-- resize ka use body ma hota ha -->
+
+
+
+<h2>Form Events This is Important!</h2>
+<P>Submit and blur and change</P>
+ 
+</body>
+</html>

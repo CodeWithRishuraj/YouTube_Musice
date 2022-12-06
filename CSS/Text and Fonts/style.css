@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    border: 1px solid rgb(254, 251, 251);
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding:20px;
+    overflow-y: scroll;
+    
+}
+h1{
+    position: relative;
+    top: 50px;
+    color: orangered;
+    text-align: center;
+
+    /* text-transform */
+    text-transform: capitalize;
+    /* text-transform: uppercase; */
+    word-spacing: 10px;
+
+    
+
+    /* direction */
+    /* direction: rtl; */
+    /* direction: ltr; Defoult value */
+}
+.test{
+    /* Text-decoration  */
+    text-decoration: underline;
+    /* text-decoration: none; Defoult value  */
+    color: white;
+}
+p{
+    position: relative;
+    top: 80px;
+    color: orange;
+
+    /* Text-align  */
+    /* text-align: center; */
+    /* text-align: left;  defout value*/
+    /* text-align: right; */
+    
+
+    /* Letter-spacing  */
+    /* letter-spacing: normal; Defoult value  */
+    letter-spacing: 1.5px;
+
+    /* Word-spacing  */
+    word-spacing: 2px;
+
+    /* text indent ka matlab first line sa space da ga */
+    text-indent: 3cm;
+}
+#shadow{
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding: 20px;
+
+    /* Text-shadow  */
+    /* first value = holigental value  */
+    /* second value = vertical value  */
+    /* third value = buller range  */
+    /* fourth = color  */
+    text-shadow: 5px 1px 3px blue;
+
+    /* font-family */
+    font-family: cursive;
+
+    cursor: pointer;
+
+    /* font-style */
+    font-style: italic;
+
+    /* font-variant */
+    font-variant: small-caps;
+
+    /* font sorthand property  */
+    /* First = style  */
+    /* second = font-variant */
+    /* third = font-weight */
+    /* fourth = font-size */
+    /* fifth = font-family */
+    /* font: italic small-caps bold 15px cursive; */
+}

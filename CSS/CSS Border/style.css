@@ -1,0 +1,87 @@
+h1{
+    color: blue;
+}
+
+p{
+    /* Border  */
+
+    /* border-style: none;  Defoult porpaties */
+    border-style: solid;
+    /* border-style: dotted; */
+    /* border-style: dashed; */
+    /* border-style: double; */
+
+    /* Left Right bottom Top Alag alag propaties */
+
+    /* border-top-style: dashed;
+    border-bottom-style: dotted;
+    border-right-style: double; */
+
+    /* short-hand-propaties */
+        /* First = Top  */
+        /* Second = Right  */
+        /* Third = Bottom  */
+        /* Fourth = left  */
+    /* border-style:top right bottom left ; */
+    /* border-style: solid  dotted  double none; for 4 value  */
+
+    /* First = top-bottom */
+    /* Second = left-right  */
+    /* border-style: top-bottom  left-right; Only for 2 Values  */
+    border-style: double dotted;
+
+
+    /* border-width Propaties in css  */
+     /* Values = Thick, Medium,  Thin  */
+     /* border-width: thick; */
+     border-width: medium;
+     /* border-width: thin; */
+
+     /* example */
+     /* border-top-width: 20px;
+     border-right-width: 25px;
+     border-bottom-width: 30px;
+     border-left-width: 35px; */
+
+     
+     /* Border-Color Propaties */
+     /* border-color: darkorange; */
+     border-top-color: pink;
+     border-bottom-color: yellowgreen;
+     border-left-color: red;
+     border-right-color: brown;
+
+
+}
+
+a{
+    /* border-style: solid;
+    padding: 4px 10px;
+    border-color: yellow;
+    border-radius: 10px;
+    border-width: 2px;
+    color: black */
+
+    /* Short-Hand- Propaties  */
+    border: 2px solid rgb(0, 170, 255);
+    padding: 10px;
+}
+a:hover{
+    border-color: red;
+    background: pink;
+
+}
+
+a{
+    /* Border- Radious Propaties  */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 60px;
+}
+
+table,tr,td,th{
+    border: 2px solid red;
+    border-collapse: collapse;
+    margin-top: 100px;
+}

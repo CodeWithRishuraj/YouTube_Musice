@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create Only JavaScript Coad</title>
+</head>
+<body>
+    
+    <section id="first_heading"></section>
+    <script>
+        var heading = document.createElement("h1");
+        heading.innerHTML = 'Welcome To Our Chanal';
+        document.getElementById('first_heading').appendChild(heading);
+    </script>
+
+    <!-- BHAVIRE CONTROLE YA LOGICE  -->
+
+    <input type="text" id="usertask">
+    <button onclick="addItem()">Add Items</button>
+    <ul id="tasklist"></ul>
+    <script>
+        function addItem(){
+            var newtask = document.createElement('li');
+            newtask.innerHTML = document.getElementById('usertask').value;
+            document.getElementById('tasklist').appendChild(newtask);
+        }
+    </script>
+
+
+    <!-- MOVER HOVER AND LEAVE MOUSE -->
+    <h2 id="second_heading" onmouseover="changeBg()" onmouseout="resetBg()">Please Hover me fast!</h2>
+    <script>
+        function changeBg(){
+            document.getElementById('second_heading').style.backgroundColor="red";
+        }
+        function resetBg(){
+            document.getElementById('second_heading').style.backgroundColor ="transparent";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+*{
+    background: rgb(248, 245, 245);
+    margin: 0;
+}
+h1{
+    background: rgb(12, 34, 234);
+    color: white;
+    border: 1px solid black;
+    padding: 20px 50px 30px 80px;
+    margin: 10px;
+    /* padding-top: 100px;
+    margin-top: 100px; */
+
+}
+h1:hover{
+    background: rgb(234, 6, 6);
+}
+
+p{
+    background: white;
+    padding: 10px 20px;
+    text-align: justify;
+    margin: 10px;
+    /* max-width: 150px !important; */
+    max-height: 70px !important;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+}
