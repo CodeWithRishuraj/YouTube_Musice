@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <!-- JSON.parse ka matlba string ko object ma convert karta ha -->
+    <!-- .stringify ka matlba object ko string ma convert karta ha -->
+    <!-- <script>
+        let jsonObject = {"name": "Nitish kumar","age":30,"inCity":true};
+        console.log(jsonObject);
+
+        // JSON with arry and object
+        let jsonObject1 =  {
+            "firsNname": "Nitish",
+            "lastName":"kumar",
+            "middleName":null,
+            "age":30,
+            "inCity":true,
+            "subjects": ["English","Math","Science"],
+            "address":{
+                "city":"Bangular",
+                "country":"India"
+            },
+        };
+        console.log(jsonObject1);
+
+    </script> -->
+
+    <!-- <script>
+        // JSON.parse()
+        let jsonObject2 = '{"fistName":"Nitish","lastName":"kumar","midleName":null,"age":30,"inCity":true,"subject":["Math","English","Genral Nolage"],"address":{"city":"Delhi","Country":"India"}}';
+        console.log(jsonObject2);
+    </script> -->
+
+    <!-- use of function -->
+    <!-- <script>
+        let jsonObject ='{"firstName":"Rishu","lastName":"Raj", "function ()": {console.log(firstName)}}';
+        console.log(jsonObject);
+    </script> -->
+
+
+    <!-- Use of stringify() and localStorage.setItem() -->
+    <script>
+        let jsonObject = {
+            "fistName":"Rishu",
+            "lastName":"Raj",
+            "midleName":null,
+            "age":30,
+            "address":{
+                "city":"Mumbai",
+                "country":"India",
+            },
+            "subject":["Math","English","Science"],
+            "print": function(){
+                console.log(this.fistName);
+            },
+            "dob":"1998-10-23",
+            "todayDate": new Date()
+        };
+        // how to show all key use for loop
+        for(const key in jsonObject){
+            console.log(key + ":" + jsonObject[key]);
+        };
+        // localStorage.setItem("jsonObject", JSON.stringify(jsonObject));
+    </script>
+</body>
+</html>
